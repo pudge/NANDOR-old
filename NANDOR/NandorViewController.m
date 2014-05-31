@@ -9,6 +9,7 @@
 #import "NandorViewController.h"
 
 @interface NandorViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *hornButton;
 @property (strong, nonatomic) NSURLSessionConfiguration *sessionConfiguration;
 @property (strong, nonatomic) NSURLSession *session;
 @property (strong, nonatomic) NSURLCredential *sessionCredential;
@@ -43,6 +44,20 @@
 - (IBAction)pressHornButton:(UIButton *)sender {
     [self initSession];
     [self makeSessionRequest:@"quiet=1&horn=on&style=old&ajax=1"];
+}
+
+
+- (IBAction)changeTeam:(UISegmentedControl *)sender {
+    NSString *buttonImage = @"bruins-button";
+    UIColor *bgColor = [UIColor blackColor];
+
+    if (sender.selectedSegmentIndex == 1) {
+        buttonImage = @"celtics-button";
+        bgColor = [UIColor colorWithRed:0 green:0.515625 blue:0.27734375 alpha:1]; // 0, 132, 71
+    }
+
+    [self.hornButton setBackgroundImage:[UIImage imageNamed:buttonImage] forState:UIControlStateNormal];
+    self.view.backgroundColor = bgColor;
 }
 
 @end
