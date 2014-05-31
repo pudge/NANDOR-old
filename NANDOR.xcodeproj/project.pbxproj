@@ -114,8 +114,6 @@
 		4DB4C58719397F84003AEE16 /* NANDOR */ = {
 			isa = PBXGroup;
 			children = (
-				4DB4C59019397F84003AEE16 /* NandorAppDelegate.h */,
-				4DB4C59119397F84003AEE16 /* NandorAppDelegate.m */,
 				4DB4C59319397F84003AEE16 /* Main_iPhone.storyboard */,
 				4DB4C59619397F84003AEE16 /* Main_iPad.storyboard */,
 				4DB4C59919397F84003AEE16 /* NandorViewController.h */,
@@ -129,6 +127,8 @@
 		4DB4C58819397F84003AEE16 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4DB4C59019397F84003AEE16 /* NandorAppDelegate.h */,
+				4DB4C59119397F84003AEE16 /* NandorAppDelegate.m */,
 				4DB4C58919397F84003AEE16 /* NANDOR-Info.plist */,
 				4DB4C58A19397F84003AEE16 /* InfoPlist.strings */,
 				4DB4C58D19397F84003AEE16 /* main.m */,
