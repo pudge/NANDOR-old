@@ -203,6 +203,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Pudge.Net;
 				TargetAttributes = {
+					4DB4C57D19397F84003AEE16 = {
+						DevelopmentTeam = 2A6737W8QG;
+					};
 					4DB4C5A119397F84003AEE16 = {
 						TestTargetID = 4DB4C57D19397F84003AEE16;
 					};
@@ -391,10 +394,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NANDOR/NANDOR-Prefix.pch";
 				INFOPLIST_FILE = "NANDOR/NANDOR-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,10 +410,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NANDOR/NANDOR-Prefix.pch";
 				INFOPLIST_FILE = "NANDOR/NANDOR-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +480,7 @@
 				4DB4C5B519397F84003AEE16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DB4C5B619397F84003AEE16 /* Build configuration list for PBXNativeTarget "NANDORTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +489,7 @@
 				4DB4C5B819397F84003AEE16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
