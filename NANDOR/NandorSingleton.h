@@ -12,5 +12,6 @@
 
 +(id)sharedData;
 @property (nonatomic) BOOL hornQuiet;
+@property (nonatomic) NSUInteger teamIndex;
 
 @end

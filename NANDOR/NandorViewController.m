@@ -29,17 +29,19 @@
 
 static NandorSingleton *_sharedData;
 
-- (void)setTeam {
-    self.team = [self.teams getTeamByIndex:self.teamSegment.selectedSegmentIndex];
-}
-
 - (IBAction)pressHornButton:(UIButton *)sender {
-    [self setTeam];
+    [self updateTeam:self.teamSegment.selectedSegmentIndex];
     [self.control playHorn:true withTeam:self.team.shortname isQuiet:self.sharedData.hornQuiet];
 }
 
 - (IBAction)changeTeam:(UISegmentedControl *)sender {
-    [self setTeam];
+    [self updateTeam:self.teamSegment.selectedSegmentIndex];
+}
+
+-(void)updateTeam:(NSUInteger)index {
+    self.team = [self.teams getTeamByIndex:index];
+    self.sharedData.teamIndex = index;
+
     [self.hornButton setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@-button", self.team.shortname]]
                                forState:UIControlStateNormal];
     self.view.backgroundColor = self.team.color;
@@ -55,6 +57,12 @@ static NandorSingleton *_sharedData;
 
 //////////////////////////////////////////////////////
 // Helper methods
+
+-(void)loadView {
+    [super loadView];
+    self.teamSegment.selectedSegmentIndex = self.sharedData.teamIndex;
+    [self updateTeam:self.teamSegment.selectedSegmentIndex];
+}
 
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
