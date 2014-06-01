@@ -9,4 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NandorViewController : UIViewController
+
+//@property (nonatomic) BOOL hornQuiet;
+
 @end

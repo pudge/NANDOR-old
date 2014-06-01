@@ -41,7 +41,8 @@
     // [request setHTTPMethod:@"POST"];
     // [request setHTTPBody:[params dataUsingEncoding:NSUTF8StringEncoding]];
     
-    //NSLog(@"URL: %@?%@", baseURL, params);
+//    NSLog(@"URL: %@?%@", baseURL, params);
+//    return;
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?%@", baseURL, params]];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     

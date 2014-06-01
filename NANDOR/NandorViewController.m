@@ -7,6 +7,7 @@
 //
 
 #import "NandorViewController.h"
+#import "NandorSingleton.h"
 #import "Teams.h"
 #import "Control.h"
 
@@ -16,7 +17,6 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *teamSegment;
 
 @property (nonatomic) NSUInteger logLevel;
-@property (nonatomic) BOOL hornQuiet;
 
 @property (strong, nonatomic) Control *control;
 @property (strong, nonatomic) Teams *teams;
@@ -27,13 +27,15 @@
 
 @implementation NandorViewController
 
+static NandorSingleton *_sharedData;
+
 - (void)setTeam {
     self.team = [self.teams getTeamByIndex:self.teamSegment.selectedSegmentIndex];
 }
 
 - (IBAction)pressHornButton:(UIButton *)sender {
     [self setTeam];
-    [self.control playHorn:true withTeam:self.team.shortname isQuiet:self.hornQuiet];
+    [self.control playHorn:true withTeam:self.team.shortname isQuiet:self.sharedData.hornQuiet];
 }
 
 - (IBAction)changeTeam:(UISegmentedControl *)sender {
@@ -43,12 +45,8 @@
     self.view.backgroundColor = self.team.color;
 }
 
-- (IBAction)editHorn:(UIBarButtonItem *)sender {
-    // show edit sheet
-}
-
 - (IBAction)winHorn:(UIBarButtonItem *)sender {
-    [self.control playTrack:@"dirty" isQuiet:self.hornQuiet];
+    [self.control playTrack:@"dirty" isQuiet:self.sharedData.hornQuiet];
 }
 
 - (IBAction)offHorn:(UIBarButtonItem *)sender {
@@ -63,6 +61,16 @@
     return UIStatusBarStyleLightContent;
 }
 
+- (IBAction)unwindToView:(UIStoryboardSegue *)segue
+{
+
+}
+
+- (NandorSingleton *)sharedData {
+    if (!_sharedData) _sharedData = [NandorSingleton sharedData];
+    return _sharedData;
+}
+
 - (Control *)control {
     if (!_control) _control = [[Control alloc] init];
     return _control;
@@ -71,11 +79,6 @@
 - (Teams *)teams {
     if (!_teams)  _teams = [[Teams alloc] init];
     return _teams;
-}
-
-// TBD: fix later
-- (BOOL)hornQuiet {
-    return false;
 }
 
 

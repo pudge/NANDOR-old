@@ -17,7 +17,7 @@
 
 @implementation Control
 
-static NSString *baseURL = @"http://private:goofy@mp3.pudge.net/cgi-bin/horn2.cgi";
+static NSString *baseURL = @"http://XXX:YYY@ZZZ/cgi-bin/horn2.cgi";
 static NSString *baseParams = @"ajax=1&style=old";
 
 -(void)playTrack:(NSString *)name isQuiet:(BOOL)isQuiet {
