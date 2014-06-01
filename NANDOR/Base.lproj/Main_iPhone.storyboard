@@ -55,6 +55,18 @@
                                             <action selector="editHorn:" destination="vXZ-lx-hvc" id="rZ9-ao-DxL"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yP0-id-7WD"/>
+                                    <barButtonItem title="Win" id="Nyb-Bk-LRR">
+                                        <connections>
+                                            <action selector="winHorn:" destination="vXZ-lx-hvc" id="lAc-OV-cH1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xZA-qx-D3d"/>
+                                    <barButtonItem title="Off " id="cmq-fD-dYt">
+                                        <connections>
+                                            <action selector="offHorn:" destination="vXZ-lx-hvc" id="8ga-82-b3H"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
