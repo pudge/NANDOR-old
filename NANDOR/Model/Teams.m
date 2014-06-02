@@ -7,7 +7,6 @@
 //
 
 #import "Teams.h"
-#import "Team.h"
 
 @interface Teams()
 
@@ -58,8 +57,14 @@
     usa.name = @"USA";
     usa.color = [UIColor colorWithRed:0.0390625 green:0.0625 blue:0.33984375 alpha:1]; // 10, 16, 87
     
+    Team *f1 = [[Team alloc] init];
+    f1.shortname = @"f1";
+    f1.label = @"Mercedes F1";
+    f1.name = @"F1";
+    f1.color = [UIColor blackColor];
+
     _teams = [NSMutableArray arrayWithObjects:
-              patriots, redsox, bruins, celtics, usa,
+              patriots, redsox, bruins, celtics, usa, f1,
               nil];
 }
 

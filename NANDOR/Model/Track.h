@@ -10,9 +10,7 @@
 
 @interface Track : NSObject
 
-//@property (strong, nonatomic) NSString *name;
-//@property (strong, nonatomic) NSString *filename;
-
--(void)play;
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *shortname;
 
 @end

@@ -15,6 +15,7 @@ NSUserDefaults *defaults;
 
 static BOOL _hornQuiet;
 static NSUInteger _teamIndex;
+static NSString *_song;
 
 +(NandorSingleton *)sharedData {
     if (!_sharedData) _sharedData = [[NandorSingleton alloc] init];
@@ -26,6 +27,7 @@ static NSUInteger _teamIndex;
 
     _hornQuiet = [[defaults valueForKey:@"hornQuiet"] boolValue];
     _teamIndex = [[defaults valueForKey:@"teamIndex"] unsignedIntegerValue];
+    _song = [defaults objectForKey:@"hornQuiet"];
 
     return self;
 }
@@ -47,6 +49,15 @@ static NSUInteger _teamIndex;
                 forKey:@"teamIndex"];
     [defaults synchronize];
 }
+
+-(NSString *)song { return _song; }
+-(void)setSong:(NSString *)song {
+    _song = song;
+    [defaults setObject:song
+                forKey:@"hornQuiet"];
+    [defaults synchronize];
+}
+
 
 
 @end

@@ -33,8 +33,9 @@
                                     <segment title="Pats"/>
                                     <segment title="Sox"/>
                                     <segment title="Bruins"/>
-                                    <segment title="Celtics"/>
+                                    <segment title="Celts"/>
                                     <segment title="USA"/>
+                                    <segment title="F1"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -62,7 +63,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="kC4-oT-3uJ"/>
-                                    <barButtonItem title="Song" id="C22-VS-zTD"/>
+                                    <barButtonItem title="Song" id="C22-VS-zTD">
+                                        <connections>
+                                            <segue destination="Ish-Dc-1zN" kind="modal" modalTransitionStyle="flipHorizontal" id="2ML-4A-r01"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="xZA-qx-D3d"/>
                                     <barButtonItem title="Off " id="cmq-fD-dYt">
                                         <connections>
@@ -78,9 +83,11 @@
                     <connections>
                         <outlet property="hornButton" destination="aFE-KS-DqT" id="1AZ-Jw-NAt"/>
                         <outlet property="teamSegment" destination="yXU-pQ-ZfV" id="DhZ-0H-Lg8"/>
+                        <segue destination="GLj-gx-zmP" kind="unwind" identifier="songUnwindSeque" unwindAction="unwindToView:" id="fQe-6y-3Dx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <exit id="GLj-gx-zmP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-67" y="-116"/>
         </scene>
@@ -137,7 +144,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YI1-tJ-h51" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="c8q-VX-aUG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="344" y="-116"/>
+            <point key="canvasLocation" x="364" y="-116"/>
+        </scene>
+        <!--Nandor Song View Controller-->
+        <scene sceneID="ehV-te-W1W">
+            <objects>
+                <viewController id="Ish-Dc-1zN" customClass="NandorSongViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cvy-QT-cdg"/>
+                        <viewControllerLayoutGuide type="bottom" id="PYK-oX-qWM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yua-J9-gcz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="XkG-n3-u7q">
+                                <rect key="frame" x="0.0" y="54" width="320" height="514"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="mM9-IM-Gk5">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mM9-IM-Gk5" id="s9o-HC-WKD">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ish-Dc-1zN" id="ni4-el-axz"/>
+                                    <outlet property="delegate" destination="Ish-Dc-1zN" id="GNZ-Yl-xf5"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Songs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrC-Ej-pLZ">
+                                <rect key="frame" x="136" y="20" width="48" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifd-yU-p0o">
+                                <rect key="frame" x="252" y="20" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jNk-VB-e3Q" kind="unwind" identifier="unwindToRootController" unwindAction="unwindToView:" id="Pko-gz-9Wb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HjC-Nw-I9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="jNk-VB-e3Q" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="-116"/>
+        </scene>
+        <!--Nandor Song View Controller-->
+        <scene sceneID="rmf-fx-jAy">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKh-1e-DfD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="XyT-Sd-lAZ" customClass="NandorSongViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="PdP-Fo-B6j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="fb8-qj-h54">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fb8-qj-h54" id="L2S-vc-yBn">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="0GX-PR-f8U">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0GX-PR-f8U" id="EZE-bZ-9f9">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Kmf-Ha-tDv">
+                                <rect key="frame" x="0.0" y="110" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kmf-Ha-tDv" id="tSV-cF-NQP">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="XyT-Sd-lAZ" id="XG7-pN-49b"/>
+                            <outlet property="delegate" destination="XyT-Sd-lAZ" id="VDE-63-NSx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="418" y="608"/>
         </scene>
     </scenes>
     <resources>

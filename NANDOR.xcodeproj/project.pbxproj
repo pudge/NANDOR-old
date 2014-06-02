@@ -30,6 +30,8 @@
 		4DB4C5A619397F84003AEE16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB4C58519397F84003AEE16 /* UIKit.framework */; };
 		4DB4C5AE19397F84003AEE16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DB4C5AC19397F84003AEE16 /* InfoPlist.strings */; };
 		4DB4C5B019397F84003AEE16 /* NANDORTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4C5AF19397F84003AEE16 /* NANDORTests.m */; };
+		4DD3AFFB193C112D00A74BA8 /* NandorSongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD3AFFA193C112D00A74BA8 /* NandorSongViewController.m */; };
+		4DD3AFFE193C1B2700A74BA8 /* Tracks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD3AFFD193C1B2700A74BA8 /* Tracks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		4DB4C5AB19397F84003AEE16 /* NANDORTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NANDORTests-Info.plist"; sourceTree = "<group>"; };
 		4DB4C5AD19397F84003AEE16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DB4C5AF19397F84003AEE16 /* NANDORTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NANDORTests.m; sourceTree = "<group>"; };
+		4DD3AFF9193C112D00A74BA8 /* NandorSongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NandorSongViewController.h; sourceTree = "<group>"; };
+		4DD3AFFA193C112D00A74BA8 /* NandorSongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NandorSongViewController.m; sourceTree = "<group>"; };
+		4DD3AFFC193C1B2700A74BA8 /* Tracks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tracks.h; path = Model/Tracks.h; sourceTree = "<group>"; };
+		4DD3AFFD193C1B2700A74BA8 /* Tracks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tracks.m; path = Model/Tracks.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,8 @@
 		4DB3F5E1193A6DE400B1B688 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4DD3AFFC193C1B2700A74BA8 /* Tracks.h */,
+				4DD3AFFD193C1B2700A74BA8 /* Tracks.m */,
 				4DA70F14193AAAEF00B44464 /* Track.h */,
 				4DA70F15193AAAEF00B44464 /* Track.m */,
 				4DB3F5E5193A7CC800B1B688 /* URLSession.h */,
@@ -156,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				4DB4C59319397F84003AEE16 /* Main_iPhone.storyboard */,
+				4DD3AFF9193C112D00A74BA8 /* NandorSongViewController.h */,
+				4DD3AFFA193C112D00A74BA8 /* NandorSongViewController.m */,
 				4DAFDA1C193AC48400D05914 /* NandorSettingsViewController.h */,
 				4DAFDA1D193AC48400D05914 /* NandorSettingsViewController.m */,
 				4DB4C59619397F84003AEE16 /* Main_iPad.storyboard */,
@@ -307,11 +317,13 @@
 				4DA70F16193AAAEF00B44464 /* Track.m in Sources */,
 				4DB3F5E7193A7CC800B1B688 /* URLSession.m in Sources */,
 				4DB3F5E0193A6D7100B1B688 /* Team.m in Sources */,
+				4DD3AFFE193C1B2700A74BA8 /* Tracks.m in Sources */,
 				4DAFDA21193AEE8500D05914 /* NandorSingleton.m in Sources */,
 				4DB4C59219397F84003AEE16 /* NandorAppDelegate.m in Sources */,
 				4DB3F5E4193A717D00B1B688 /* Teams.m in Sources */,
 				4DA70F19193AABB400B44464 /* Control.m in Sources */,
 				4DB4C58E19397F84003AEE16 /* main.m in Sources */,
+				4DD3AFFB193C112D00A74BA8 /* NandorSongViewController.m in Sources */,
 				4DAFDA1E193AC48400D05914 /* NandorSettingsViewController.m in Sources */,
 				4DB4C59B19397F84003AEE16 /* NandorViewController.m in Sources */,
 			);
