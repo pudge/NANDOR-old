@@ -11,7 +11,6 @@
 		4DA70F19193AABB400B44464 /* Control.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA70F18193AABB400B44464 /* Control.m */; };
 		4DAFDA1E193AC48400D05914 /* NandorSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFDA1D193AC48400D05914 /* NandorSettingsViewController.m */; };
 		4DAFDA21193AEE8500D05914 /* NandorSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFDA20193AEE8500D05914 /* NandorSingleton.m */; };
-		4DAFDA23193B051000D05914 /* sharedData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DAFDA22193B051000D05914 /* sharedData.plist */; };
 		4DB3F5E0193A6D7100B1B688 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3F5DF193A6D7100B1B688 /* Team.m */; };
 		4DB3F5E4193A717D00B1B688 /* Teams.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3F5E3193A717D00B1B688 /* Teams.m */; };
 		4DB3F5E7193A7CC800B1B688 /* URLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3F5E6193A7CC800B1B688 /* URLSession.m */; };
@@ -53,7 +52,6 @@
 		4DAFDA1D193AC48400D05914 /* NandorSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NandorSettingsViewController.m; sourceTree = "<group>"; };
 		4DAFDA1F193AEE8500D05914 /* NandorSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NandorSingleton.h; sourceTree = "<group>"; };
 		4DAFDA20193AEE8500D05914 /* NandorSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NandorSingleton.m; sourceTree = "<group>"; };
-		4DAFDA22193B051000D05914 /* sharedData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sharedData.plist; path = NANDOR/Resources/sharedData.plist; sourceTree = "<group>"; };
 		4DB3F5DE193A6D7100B1B688 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Team.h; path = Model/Team.h; sourceTree = "<group>"; };
 		4DB3F5DF193A6D7100B1B688 /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Team.m; path = Model/Team.m; sourceTree = "<group>"; };
 		4DB3F5E2193A717D00B1B688 /* Teams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Teams.h; path = Model/Teams.h; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 		4DB4C57519397F84003AEE16 = {
 			isa = PBXGroup;
 			children = (
-				4DAFDA22193B051000D05914 /* sharedData.plist */,
 				4DB4C58719397F84003AEE16 /* NANDOR */,
 				4DB4C5A919397F84003AEE16 /* NANDORTests */,
 				4DB4C58019397F84003AEE16 /* Frameworks */,
@@ -295,7 +292,6 @@
 				4DB4C59D19397F84003AEE16 /* Images.xcassets in Resources */,
 				4DB4C59519397F84003AEE16 /* Main_iPhone.storyboard in Resources */,
 				4DB4C58C19397F84003AEE16 /* InfoPlist.strings in Resources */,
-				4DAFDA23193B051000D05914 /* sharedData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

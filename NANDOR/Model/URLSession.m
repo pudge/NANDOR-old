@@ -35,14 +35,9 @@
 }
 
 - (void)makeRequest:(NSString *)baseURL with:(NSString *)params {
-    // we could use this for POSTing, but i want to see the get parameters
-    // NSURL *url = [NSURL URLWithString:self.baseURL];
-    // NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    // [request setHTTPMethod:@"POST"];
-    // [request setHTTPBody:[params dataUsingEncoding:NSUTF8StringEncoding]];
-    
-//    NSLog(@"URL: %@?%@", baseURL, params);
-//    return;
+    //NSLog(@"URL: %@?%@", baseURL, params);
+    //return;
+
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?%@", baseURL, params]];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
