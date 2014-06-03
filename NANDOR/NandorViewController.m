@@ -7,9 +7,7 @@
 //
 
 #import "NandorViewController.h"
-#import "NandorSingleton.h"
-#import "Teams.h"
-#import "Control.h"
+#import "NANDOR-Swift.h"
 
 @interface NandorViewController ()
 
@@ -31,7 +29,7 @@ static NandorSingleton *_sharedData;
 
 - (IBAction)pressHornButton:(UIButton *)sender {
     [self updateTeam:self.teamSegment.selectedSegmentIndex];
-    [self.control playHorn:true withTeam:self.team.shortname isQuiet:self.sharedData.hornQuiet];
+    [self.control playHorn:true withTeam:self.team.shortname isQuiet:[self.sharedData hornQuiet]];
 }
 
 - (IBAction)changeTeam:(UISegmentedControl *)sender {
@@ -75,7 +73,7 @@ static NandorSingleton *_sharedData;
 }
 
 - (NandorSingleton *)sharedData {
-    if (!_sharedData) _sharedData = [NandorSingleton sharedData];
+    if (!_sharedData) _sharedData = [[NandorSingleton alloc] init];
     return _sharedData;
 }
 

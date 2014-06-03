@@ -7,7 +7,7 @@
 //
 
 #import "NandorSettingsViewController.h"
-#import "NandorSingleton.h"
+#import "NANDOR-Swift.h"
 
 @interface NandorSettingsViewController ()
 @property (weak, nonatomic) IBOutlet UISwitch *quietSwitch;
@@ -32,7 +32,7 @@ static NandorSingleton *_sharedData;
 }
 
 - (NandorSingleton *)sharedData {
-    if (!_sharedData) _sharedData = [NandorSingleton sharedData];
+    if (!_sharedData) _sharedData = [[NandorSingleton alloc] init];
     return _sharedData;
 }
 

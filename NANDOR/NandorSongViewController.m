@@ -7,10 +7,7 @@
 //
 
 #import "NandorSongViewController.h"
-#import "NandorSingleton.h"
-#import "Tracks.h"
-#import "Track.h"
-#import "Control.h"
+#import "NANDOR-Swift.h"
 
 @interface NandorSongViewController ()
 
@@ -59,7 +56,7 @@ static NandorSingleton *_sharedData;
 }
 
 - (NandorSingleton *)sharedData {
-    if (!_sharedData) _sharedData = [NandorSingleton sharedData];
+    if (!_sharedData) _sharedData = [[NandorSingleton alloc] init];
     return _sharedData;
 }
 

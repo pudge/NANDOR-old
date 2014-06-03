@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DA70F16193AAAEF00B44464 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA70F15193AAAEF00B44464 /* Track.m */; };
-		4DA70F19193AABB400B44464 /* Control.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA70F18193AABB400B44464 /* Control.m */; };
-		4DAFDA1E193AC48400D05914 /* NandorSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFDA1D193AC48400D05914 /* NandorSettingsViewController.m */; };
-		4DAFDA21193AEE8500D05914 /* NandorSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFDA20193AEE8500D05914 /* NandorSingleton.m */; };
-		4DB3F5E0193A6D7100B1B688 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3F5DF193A6D7100B1B688 /* Team.m */; };
-		4DB3F5E4193A717D00B1B688 /* Teams.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3F5E3193A717D00B1B688 /* Teams.m */; };
-		4DB3F5E7193A7CC800B1B688 /* URLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3F5E6193A7CC800B1B688 /* URLSession.m */; };
+		4D0B81CB193D768B00CC531C /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B81CA193D768B00CC531C /* Control.swift */; };
+		4D0B81CD193D77AE00CC531C /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B81CC193D77AE00CC531C /* URLSession.swift */; };
+		4D0B81CF193D7E4E00CC531C /* NandorSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B81CE193D7E4E00CC531C /* NandorSingleton.swift */; };
+		4D0B81D3193DF63C00CC531C /* NandorSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B81D2193DF63C00CC531C /* NandorSettingsViewController.swift */; };
+		4D46B950193D6D11002CE766 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D46B94F193D6D11002CE766 /* Team.swift */; };
+		4D46B952193D70BC002CE766 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D46B951193D70BC002CE766 /* Teams.swift */; };
+		4DB3E712193D3EF7002B0FD3 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3E711193D3EF7002B0FD3 /* Track.swift */; };
+		4DB3E714193D433E002B0FD3 /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3E713193D433E002B0FD3 /* Tracks.swift */; };
 		4DB4C58219397F84003AEE16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB4C58119397F84003AEE16 /* Foundation.framework */; };
 		4DB4C58419397F84003AEE16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB4C58319397F84003AEE16 /* CoreGraphics.framework */; };
 		4DB4C58619397F84003AEE16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB4C58519397F84003AEE16 /* UIKit.framework */; };
@@ -30,7 +31,6 @@
 		4DB4C5AE19397F84003AEE16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DB4C5AC19397F84003AEE16 /* InfoPlist.strings */; };
 		4DB4C5B019397F84003AEE16 /* NANDORTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4C5AF19397F84003AEE16 /* NANDORTests.m */; };
 		4DD3AFFB193C112D00A74BA8 /* NandorSongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD3AFFA193C112D00A74BA8 /* NandorSongViewController.m */; };
-		4DD3AFFE193C1B2700A74BA8 /* Tracks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD3AFFD193C1B2700A74BA8 /* Tracks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,20 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4DA70F14193AAAEF00B44464 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Track.h; path = Model/Track.h; sourceTree = "<group>"; };
-		4DA70F15193AAAEF00B44464 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Track.m; path = Model/Track.m; sourceTree = "<group>"; };
-		4DA70F17193AABB400B44464 /* Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Control.h; path = Model/Control.h; sourceTree = "<group>"; };
-		4DA70F18193AABB400B44464 /* Control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Control.m; path = Model/Control.m; sourceTree = "<group>"; };
-		4DAFDA1C193AC48400D05914 /* NandorSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NandorSettingsViewController.h; sourceTree = "<group>"; };
-		4DAFDA1D193AC48400D05914 /* NandorSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NandorSettingsViewController.m; sourceTree = "<group>"; };
-		4DAFDA1F193AEE8500D05914 /* NandorSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NandorSingleton.h; sourceTree = "<group>"; };
-		4DAFDA20193AEE8500D05914 /* NandorSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NandorSingleton.m; sourceTree = "<group>"; };
-		4DB3F5DE193A6D7100B1B688 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Team.h; path = Model/Team.h; sourceTree = "<group>"; };
-		4DB3F5DF193A6D7100B1B688 /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Team.m; path = Model/Team.m; sourceTree = "<group>"; };
-		4DB3F5E2193A717D00B1B688 /* Teams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Teams.h; path = Model/Teams.h; sourceTree = "<group>"; };
-		4DB3F5E3193A717D00B1B688 /* Teams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Teams.m; path = Model/Teams.m; sourceTree = "<group>"; };
-		4DB3F5E5193A7CC800B1B688 /* URLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = URLSession.h; path = Model/URLSession.h; sourceTree = "<group>"; };
-		4DB3F5E6193A7CC800B1B688 /* URLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = URLSession.m; path = Model/URLSession.m; sourceTree = "<group>"; };
+		4D0B81CA193D768B00CC531C /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Control.swift; path = Model/Control.swift; sourceTree = "<group>"; };
+		4D0B81CC193D77AE00CC531C /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLSession.swift; path = Model/URLSession.swift; sourceTree = "<group>"; };
+		4D0B81CE193D7E4E00CC531C /* NandorSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NandorSingleton.swift; path = Model/NandorSingleton.swift; sourceTree = "<group>"; };
+		4D0B81D2193DF63C00CC531C /* NandorSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NandorSettingsViewController.swift; path = "View Controllers/NandorSettingsViewController.swift"; sourceTree = "<group>"; };
+		4D46B94F193D6D11002CE766 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Team.swift; path = Model/Team.swift; sourceTree = "<group>"; };
+		4D46B951193D70BC002CE766 /* Teams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Teams.swift; path = Model/Teams.swift; sourceTree = "<group>"; };
+		4DB3E708193D1C88002B0FD3 /* NANDOR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NANDOR-Bridging-Header.h"; sourceTree = "<group>"; };
+		4DB3E710193D22F2002B0FD3 /* NandorPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NandorPlayground.playground; sourceTree = "<group>"; };
+		4DB3E711193D3EF7002B0FD3 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Track.swift; path = Model/Track.swift; sourceTree = "<group>"; };
+		4DB3E713193D433E002B0FD3 /* Tracks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tracks.swift; path = Model/Tracks.swift; sourceTree = "<group>"; };
 		4DB4C57E19397F84003AEE16 /* NANDOR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NANDOR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB4C58119397F84003AEE16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4DB4C58319397F84003AEE16 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,8 +76,6 @@
 		4DB4C5AF19397F84003AEE16 /* NANDORTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NANDORTests.m; sourceTree = "<group>"; };
 		4DD3AFF9193C112D00A74BA8 /* NandorSongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NandorSongViewController.h; sourceTree = "<group>"; };
 		4DD3AFFA193C112D00A74BA8 /* NandorSongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NandorSongViewController.m; sourceTree = "<group>"; };
-		4DD3AFFC193C1B2700A74BA8 /* Tracks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tracks.h; path = Model/Tracks.h; sourceTree = "<group>"; };
-		4DD3AFFD193C1B2700A74BA8 /* Tracks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tracks.m; path = Model/Tracks.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,21 +102,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D0B81D4193DF64700CC531C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D0B81D2193DF63C00CC531C /* NandorSettingsViewController.swift */,
+				4DD3AFF9193C112D00A74BA8 /* NandorSongViewController.h */,
+				4DD3AFFA193C112D00A74BA8 /* NandorSongViewController.m */,
+				4DB4C59919397F84003AEE16 /* NandorViewController.h */,
+				4DB4C59A19397F84003AEE16 /* NandorViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		4DB3F5E1193A6DE400B1B688 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4DD3AFFC193C1B2700A74BA8 /* Tracks.h */,
-				4DD3AFFD193C1B2700A74BA8 /* Tracks.m */,
-				4DA70F14193AAAEF00B44464 /* Track.h */,
-				4DA70F15193AAAEF00B44464 /* Track.m */,
-				4DB3F5E5193A7CC800B1B688 /* URLSession.h */,
-				4DB3F5E6193A7CC800B1B688 /* URLSession.m */,
-				4DA70F17193AABB400B44464 /* Control.h */,
-				4DA70F18193AABB400B44464 /* Control.m */,
-				4DB3F5DE193A6D7100B1B688 /* Team.h */,
-				4DB3F5DF193A6D7100B1B688 /* Team.m */,
-				4DB3F5E2193A717D00B1B688 /* Teams.h */,
-				4DB3F5E3193A717D00B1B688 /* Teams.m */,
+				4D0B81CE193D7E4E00CC531C /* NandorSingleton.swift */,
+				4D0B81CA193D768B00CC531C /* Control.swift */,
+				4D46B94F193D6D11002CE766 /* Team.swift */,
+				4D46B951193D70BC002CE766 /* Teams.swift */,
+				4DB3E711193D3EF7002B0FD3 /* Track.swift */,
+				4DB3E713193D433E002B0FD3 /* Tracks.swift */,
+				4D0B81CC193D77AE00CC531C /* URLSession.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -161,15 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				4DB4C59319397F84003AEE16 /* Main_iPhone.storyboard */,
-				4DD3AFF9193C112D00A74BA8 /* NandorSongViewController.h */,
-				4DD3AFFA193C112D00A74BA8 /* NandorSongViewController.m */,
-				4DAFDA1C193AC48400D05914 /* NandorSettingsViewController.h */,
-				4DAFDA1D193AC48400D05914 /* NandorSettingsViewController.m */,
 				4DB4C59619397F84003AEE16 /* Main_iPad.storyboard */,
-				4DB4C59919397F84003AEE16 /* NandorViewController.h */,
-				4DB4C59A19397F84003AEE16 /* NandorViewController.m */,
-				4DAFDA1F193AEE8500D05914 /* NandorSingleton.h */,
-				4DAFDA20193AEE8500D05914 /* NandorSingleton.m */,
+				4D0B81D4193DF64700CC531C /* View Controllers */,
 				4DB3F5E1193A6DE400B1B688 /* Model */,
 				4DB4C59C19397F84003AEE16 /* Images.xcassets */,
 				4DB4C58819397F84003AEE16 /* Supporting Files */,
@@ -180,6 +174,8 @@
 		4DB4C58819397F84003AEE16 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4DB3E710193D22F2002B0FD3 /* NandorPlayground.playground */,
+				4DB3E708193D1C88002B0FD3 /* NANDOR-Bridging-Header.h */,
 				4DB4C59019397F84003AEE16 /* NandorAppDelegate.h */,
 				4DB4C59119397F84003AEE16 /* NandorAppDelegate.m */,
 				4DB4C58919397F84003AEE16 /* NANDOR-Info.plist */,
@@ -310,17 +306,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DA70F16193AAAEF00B44464 /* Track.m in Sources */,
-				4DB3F5E7193A7CC800B1B688 /* URLSession.m in Sources */,
-				4DB3F5E0193A6D7100B1B688 /* Team.m in Sources */,
-				4DD3AFFE193C1B2700A74BA8 /* Tracks.m in Sources */,
-				4DAFDA21193AEE8500D05914 /* NandorSingleton.m in Sources */,
+				4D0B81CB193D768B00CC531C /* Control.swift in Sources */,
+				4D46B950193D6D11002CE766 /* Team.swift in Sources */,
+				4DB3E714193D433E002B0FD3 /* Tracks.swift in Sources */,
+				4D0B81CF193D7E4E00CC531C /* NandorSingleton.swift in Sources */,
 				4DB4C59219397F84003AEE16 /* NandorAppDelegate.m in Sources */,
-				4DB3F5E4193A717D00B1B688 /* Teams.m in Sources */,
-				4DA70F19193AABB400B44464 /* Control.m in Sources */,
+				4D46B952193D70BC002CE766 /* Teams.swift in Sources */,
+				4D0B81CD193D77AE00CC531C /* URLSession.swift in Sources */,
+				4D0B81D3193DF63C00CC531C /* NandorSettingsViewController.swift in Sources */,
 				4DB4C58E19397F84003AEE16 /* main.m in Sources */,
 				4DD3AFFB193C112D00A74BA8 /* NandorSongViewController.m in Sources */,
-				4DAFDA1E193AC48400D05914 /* NandorSettingsViewController.m in Sources */,
+				4DB3E712193D3EF7002B0FD3 /* Track.swift in Sources */,
 				4DB4C59B19397F84003AEE16 /* NandorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,13 +452,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NANDOR/NANDOR-Prefix.pch";
 				INFOPLIST_FILE = "NANDOR/NANDOR-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NANDOR/NANDOR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -472,13 +472,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NANDOR/NANDOR-Prefix.pch";
 				INFOPLIST_FILE = "NANDOR/NANDOR-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NANDOR/NANDOR-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
